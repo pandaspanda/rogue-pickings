@@ -1,0 +1,165 @@
+/***** BASE STYLES *****/
+
+body {
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    color: #77a466;
+    margin: 5px 20px;
+}
+
+@font-face {
+    font-family: 'Wisdom';
+    src: url('../fonts/WisdomScriptAJ.woff') format('woff');
+}
+
+/***** GRID *****/
+
+.full-width {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.half-width {
+    width: 600px;
+    float: left;
+}
+
+.third-width {
+    width: 400px;
+   
+    float: left;
+    border: solid #dedbdc;
+    border-width: 1px 0;
+    height: 179px;
+    padding: 15px 0px 25px;
+    
+}
+
+
+
+/***** HEADER *****/
+
+header {
+    height: 95px;
+    line-height: 23px; 
+    padding: 10px 0 0px 0;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 30px;
+
+}
+
+header h1 span {
+    color: black;
+}
+
+nav {
+    float: right; 
+    padding: 10px 0px 0px 0px;
+}
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: #77a466;
+    padding-left: 20px;
+  
+}
+
+/***** TOP SECTION *****/
+
+.background {
+    background-color: #77a466;
+    height: 294px;
+    
+}
+
+.image {
+    background: url(../img/hero.png);
+    height: 288px; 
+    position: relative;
+    top: 3px;
+}
+
+#about {
+    height: 170px;
+    position: relative;
+    left: 3px;
+
+}
+
+#about h2 {
+    padding: 5px 0;
+    font-size: 18px;
+}
+
+#about p {
+    text-transform: none;
+    color: black;
+    line-height: 25px;
+
+}
+
+/***** BOTTOM SECTION *****/
+
+#bottom {
+    color: black;
+}
+
+#bottom h3 {
+    font-size: 12px;
+    line-height: 25px; 
+}
+
+#bottom p, #bottom ul li {
+    text-transform: none;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+#bottom p {
+    padding: 0 35px 0 0;
+}
+
+#bottom ul li {
+    list-style-type: none;
+    line-height: 18px;
+    margin-left: -40px;
+    margin-top: 20px;
+    color: #77a466;
+}
+
+
+#reviews, #contact {
+    border-left-width: 1px;
+    width: 374px;
+    padding-left: 25px;
+}
+
+/***** FOOTER *****/
+
+footer {
+    clear: both;
+    text-align: center;
+    height: 80px;
+    padding: 30px 0 10px;
+}
+
+footer h2 {
+    font-size: 16px;
+    color: black;
+}
+
+footer h2 span {
+    font-family: 'Wisdom', script;
+    font-weight: normal;
+    text-transform: none;
+    color: #77a466;
+}
