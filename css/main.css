@@ -76,7 +76,7 @@ header nav ul li {
 	font-weight: 700;
 	font-size: 1em;
 	padding: 1em 0.625em;
-	display: block;
+	display: inline;
 
 }
 header nav ul li a{
