@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Wisdom';
+    font-family: 'Wisdom Script';
     src: url('../fonts/WisdomScriptAJ.woff') format('woff');
 }
 
@@ -82,69 +82,70 @@ header nav ul li a{
 	clear: both;
 }
 
-.main-image {
+.top-section .main-image {
 	height: auto;
 	float: left;
 }
-.main-image img {
+.top-section .main-image img {
 	width: 100%;
 	border-bottom: 3px solid #77a466;
 }
 
-.main-title {
+.top-section .main-title {
 	height: auto;
 	float: left;
 }
-.main-title h3 {
+.top-section .main-title h3 {
 	text-align: left;
 	padding: 5px 0;
 	color: #77a466;
 }
-.main-title p {
+.top-section .main-title p {
 	padding: 0;
 	font-size: 16px;
 	line-height: 25px;
 }
 
-.section-one,
-.section-two,
-.section-three {
+.bottom-section .section-one,
+.bottom-section .section-two,
+.bottom-section .section-three {
 	width: 33%;
 	height: auto;
 	float: left;
 	border-top: 1px solid #eee;
 }
 
-.section-one h4 {
+.bottom-section .section-one h4 {
 	padding: 10px 0;
 }
 
-.section-two {
+.bottom-section .section-two {
 	border-left: 1px solid #eee;
 	border-right: 1px solid #eee;
 }
 
-.section-two h4,
-.section-three h4 {
+.bottom-section .section-two h4,
+.bottom-section .section-three h4 {
 	padding: 10px 30px;
 }
 
-.menu {
+.bottom-section .section-one .menu {
 	list-style: none;
 	padding: 0;
 }
-.menu li {
+
+.bottom-section .section-one .menu li {
 	padding: 10px 0;
 	color:#77a466;
 }
 
-.reviews {
+.bottom-section .section-two .reviews {
 	color: #333;
 	font-size: 16px;
 	line-height: 21px;
 }
 
-.address {
+.bottom-section .section-three .address {
 	font-size: 16px;
 	line-height: 24px;
 }
