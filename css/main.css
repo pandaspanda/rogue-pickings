@@ -75,8 +75,9 @@ header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 1em;
-	padding: 0 0.714em;
-	display: inline;
+	padding: 1em 0.625em;
+	display: block;
+
 }
 header nav ul li a{
 	text-decoration: none;
