@@ -7,16 +7,6 @@ html {
     font-size: 16px;
 }
 
-body {
-	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-    font-size: 1em;
-}
-
-.container{
-	max-width: 1200px;
-	margin: 0 auto;
-}
-
 h1,
 h2,
 h3,
@@ -25,38 +15,40 @@ h4 {
 	text-transform: uppercase;
 	font-weight: 700;
 }
-h1 {
-	font-size: 30px;
-}
-h2 {
-    font-size: 24px;
-}
-h3 {
-	font-size: 18px;
-}
-h4 {
-	font-size: 12px;
+
+body {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    font-size: 1em;
 }
 
-p {
-	font-size: 14px;
-	line-height: 21px;
-    padding: 0 30px;
-}
 
+
+
+
+/*---------------------- MOBILE -----------------------*/
 /*The widths are in a percentage!*/
+
+.container {
+    width: 90%;
+	margin: 0 auto;
+    max-width: 767px;
+}
+
+/*-- Mobile Header --*/
+
 header {
 	border-bottom: 0.214em solid #77a466;
 	margin: 0 auto;
     font-size: .875em;
-    height: 7.857em;
+    text-align: center;
 }
 
 header h1 {
-	float: left;
+	clear: both;
 	margin: 0;
     font-size: 2.143em;
-	padding: 1.267em 0;
+	padding: 1.267em 0 1em;
+    border-bottom: 0.107em solid #77a466;
 }
 
 header h1 span {
@@ -64,19 +56,22 @@ header h1 span {
 }
 
 header nav {
-	float: right;
-	padding: 3.286em 0;
+    clear: both;
+   	padding: 1.643em 0;
 }
+
 header nav ul {
 	margin: 0;
 	padding: 0;
+
 }
+
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 1em;
 	padding: 1em 0.625em;
-	display: inline;
+	display: block;
 
 }
 header nav ul li a{
@@ -85,12 +80,17 @@ header nav ul li a{
 }
 
 /*The widths are in a percentage!*/
+
+/*-- Mobile Main Default Styles --*/
+
 .top-section,
 .bottom-section {
 	margin: 0 auto;
 	clear: both;
     font-size: 1em;
 }
+
+/*-- Mobile Top-Section  --*/
 
 .top-section .main-image {
 	height: auto;
@@ -108,23 +108,338 @@ header nav ul li a{
 .top-section .main-title h3 {
 	text-align: left;
     font-size: 1.125em;
-	padding: 0.278em 0;
+	padding: 0.5em 0;
 	color: #77a466;
 }
 .top-section .main-title p {
 	padding: 0;
 	font-size: 1em;
-	line-height: 1.563em;
+	line-height: 1.8em;
 }
+
+/*-- Mobile Bottom-Section  --*/
+
+.bottom-section .section-one,
+.bottom-section .section-two,
+.bottom-section .section-three {
+	width: 100%;
+	height: auto;
+	border-top: 0.063em solid #eee;
+}
+
+
+.bottom-section .section-one h4 {
+	font-size: 0.75em;
+    padding: 0.833em 0;
+}
+
+.bottom-section .section-two {
+	border-left: none;
+	border-right: none;
+}
+
+.bottom-section .section-two h4,
+.bottom-section .section-three h4 {
+	font-size: 0.75em;
+    padding: 0.833em 0;
+}
+
+.bottom-section .section-one .menu {
+	list-style: none;
+	padding: 0;
+}
+
+.bottom-section .section-one .menu li {
+	padding: 0.625em 0;
+	color:#77a466;
+}
+
+.bottom-section .section-two .reviews {
+	color: #333;
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+.bottom-section .section-three .address {
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+/*-- Mobile Footer --*/
+
+/*The widths are in a percentage!*/
+footer h4 {
+    font-size: 0.75em;
+	line-height: 4.167em;
+	border-top: 0.25em solid #eee;
+	margin: 0 auto;
+	clear: both;
+	text-align: center;
+}
+footer h4 span {
+	font-family: 'Wisdom Script', cursive;
+	text-transform: lowercase;
+	color: #77a466;
+	font-size: 1.3em;
+}
+
+/*----------------------- TABLET STYLES -------------------*/
+
+@media all and (min-width:768px) {
+    /* Tablet styles here */
+
+/*The widths are in a percentage!*/
+
+.container {
+    width: 90%;
+	margin: 0 auto;
+    max-width: 940px;
+}
+
+/*-- Tablet Header --*/
+
+header {
+	border-bottom: 0.214em solid #77a466;
+	margin: 0 auto;
+    font-size: .875em;
+    text-align: center;
+}
+
+header h1 {
+	clear: both;
+	margin: 0;
+    font-size: 2.143em;
+	padding: 1.267em 0 1em;
+    border-bottom: 0.107em solid #77a466;
+}
+
+header h1 span {
+	color: #77a466;
+}
+
+header nav {
+    clear: both;
+   	padding: 1.643em 0;
+}
+
+header nav ul {
+	margin: 0;
+	padding: 0;
+
+}
+
+header nav ul li {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1em;
+	padding: 1em 0.625em;
+	display: block;
+
+}
+header nav ul li a{
+	text-decoration: none;
+	color:#77a466;
+}
+
+/*The widths are in a percentage!*/
+
+/*-- Tablet Main Default Styles --*/
+
+.top-section,
+.bottom-section {
+	margin: 0 auto;
+	clear: both;
+    font-size: 1em;
+}
+
+/*-- Tablet Top-Section  --*/
+
+.top-section .main-image {
+	height: auto;
+	float: left;
+}
+.top-section .main-image img {
+	width: 100%;
+	border-bottom: .188em solid #77a466;
+}
+
+.top-section .main-title {
+	height: auto;
+	float: left;
+}
+.top-section .main-title h3 {
+	text-align: left;
+    font-size: 1.125em;
+	padding: 0.5em 0;
+	color: #77a466;
+}
+.top-section .main-title p {
+	padding: 0;
+	font-size: 1em;
+	line-height: 1.8em;
+}
+
+/*-- Tablet Bottom-Section  --*/
+
+.bottom-section .section-one,
+.bottom-section .section-two,
+.bottom-section .section-three {
+	width: 100%;
+	height: auto;
+	border-top: 0.063em solid #eee;
+}
+
+
+.bottom-section .section-one h4 {
+	font-size: 0.75em;
+    padding: 0.833em 0;
+}
+
+.bottom-section .section-two {
+	border-left: none;
+	border-right: none;
+}
+
+.bottom-section .section-two h4,
+.bottom-section .section-three h4 {
+	font-size: 0.75em;
+    padding: 0.833em 0;
+}
+
+.bottom-section .section-one .menu {
+	list-style: none;
+	padding: 0;
+}
+
+.bottom-section .section-one .menu li {
+	padding: 0.625em 0;
+	color:#77a466;
+}
+
+.bottom-section .section-two .reviews {
+	color: #333;
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+.bottom-section .section-three .address {
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+/*-- Tablet Footer --*/
+
+/*The widths are in a percentage!*/
+footer h4 {
+    font-size: 0.75em;
+	line-height: 4.167em;
+	border-top: 0.25em solid #eee;
+	margin: 0 auto;
+	clear: both;
+	text-align: center;
+}
+footer h4 span {
+	font-family: 'Wisdom Script', cursive;
+	text-transform: lowercase;
+	color: #77a466;
+	font-size: 1.3em;
+}
+
+
+}
+
+
+/*----------------------- DESKTOP STYLES -------------------*/
+@media all and (min-width:940px) {
+
+
+.container {
+    min-width: 941px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/*-- Desktop Header --*/
+header {
+	border-bottom: 0.214em solid #77a466;
+	margin: 0 auto;
+    font-size: .875em;
+    height: 7.857em;
+}
+
+header h1 {
+	float: left;
+	margin: 0;
+    font-size: 2.143em;
+	padding: 1.267em 0;
+    border-bottom: none;
+}
+
+header nav {
+    clear: none;
+	float: right;
+	padding: 3.286em 0;
+}
+
+header nav ul {
+	margin: 0;
+	padding: 0;
+}
+header nav ul li {
+	font-size: 1em;
+	padding: 1em 0.625em;
+	display: inline;
+
+}
+
+/*-- Desktop Main Default Styles--*/
+
+.top-section,
+.bottom-section {
+	margin: 0 auto;
+	clear: both;
+    font-size: 1em;
+}
+
+/*-- Desktop Top-Section --*/
+
+.top-section .main-image {
+	height: auto;
+	float: left;
+}
+.top-section .main-image img {
+	width: 100%;
+	border-bottom: .188em solid #77a466;
+}
+
+.top-section .main-title {
+	height: auto;
+	float: left;
+}
+.top-section .main-title h3 {
+	text-align: left;
+    font-size: 1.125em;
+	padding: 0.5em 0;
+	color: #77a466;
+}
+.top-section .main-title p {
+	padding: 0;
+	font-size: 1em;
+	line-height: 1.8em;
+}
+
+
+/*-- Desktop Bottom-Section  --*/
 
 .bottom-section .section-one,
 .bottom-section .section-two,
 .bottom-section .section-three {
 	width: 33%;
 	height: auto;
-	float: left;
 	border-top: 0.063em solid #eee;
+    float: left;
 }
+
 
 .bottom-section .section-one h4 {
 	font-size: 0.75em;
@@ -142,6 +457,7 @@ header nav ul li a{
     padding: 0.833em 2.5em;
 }
 
+
 .bottom-section .section-one .menu {
 	list-style: none;
 	padding: 0;
@@ -155,13 +471,17 @@ header nav ul li a{
 .bottom-section .section-two .reviews {
 	color: #333;
 	font-size: 1em;
-	line-height: 1.313em;
+	line-height: 1.5em;
+    padding: 0 1.875em;
 }
 
 .bottom-section .section-three .address {
 	font-size: 1em;
 	line-height: 1.5em;
+    padding: 0 1.875em;
 }
+
+/*-- Desktop Footer --*/
 
 /*The widths are in a percentage!*/
 footer h4 {
@@ -177,4 +497,6 @@ footer h4 span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: 1.167em;
+}
+
 }
